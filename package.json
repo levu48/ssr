@@ -1,0 +1,27 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "/bin/rm -rf dist && babel src -d dist",
+    "start": "npm run build && node ./dist/server/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.5.2"
+  },
+  "dependencies": {
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-save": "^1.2.0",
+    "detect-browser": "^1.7.0",
+    "iso": "^5.2.0",
+    "koa": "^2.2.0",
+    "koa-router": "^7.2.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "useragent": "^2.1.13"
+  }
+}
